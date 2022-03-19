@@ -8,25 +8,42 @@ public class FirstClass {
 
         // VCS stands for Version Control System
 
+
         Scanner scannerObjectName = new Scanner(System.in);
 
         System.out.println("Please Enter data");
-        int number = scannerObjectName.nextInt();
+        int time = scannerObjectName.nextInt();
 
-        if (number >= 10 && number <= 50) {
-            if (number >= 33) {
-                System.out.println("Pass");
-            } else {
-                System.out.println("fail");
-            }
-            if (number >= 50) {
-                System.out.println("grade c");
-            } else {
-                System.out.println("Terminated");
-            }
+
+        //   <----------------------------------------------------If Else If--------------------------------------------------------------->
+
+        if (time < 10) {
+//            greeting = "Good morning";
+            System.out.print("Good morning");
+        } else if (time < 20) {
+//            greeting = "Good day";
+            System.out.print("Good day");
         } else {
-            System.out.println("ending");
+//            greeting = "Good evening";
+            System.out.print("Good evening");
         }
+
+
+//   <----------------------------------------------------Nested If Else Inside If--------------------------------------------------------------->
+//        if (time >= 10 && time <= 50) {
+//            if (time >= 33) {
+//                System.out.println("Pass");
+//            } else {
+//                System.out.println("fail");
+//            }
+//            if (time >= 50) {
+//                System.out.println("grade c");
+//            } else {
+//                System.out.println("Terminated");
+//            }
+//        } else {
+//            System.out.println("ending");
+//        }
 
     }
 }
